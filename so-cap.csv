@@ -1,0 +1,993 @@
+April;n. tháng Tư
+August;n. tháng Tám
+December;n. tháng Mười Hai
+February;n. tháng 2
+Friday;n. thứ Sáu
+January;n. tháng Một
+July;n. tháng Bảy
+June;n. tháng Sáu
+March;n. tháng Ba
+Monday;n. thứ Hai
+November;n. tháng Mười Một
+October;n. tháng Mười
+Saturday;n. thứ Bảy
+September;n. tháng Chín
+Sunday;n. Chủ nhật
+Thursday;n. thứ Năm
+Tuesday;n. thứ Ba
+Wednesday;n. thứ Tư
+actor;n. diễn viên nam
+actress;n. diễn viên nữ
+afternoon;n. chiều
+apple;n. táo
+arm;n. cánh tay
+artist;n. nghệ sĩ
+aunt;n. cô, dì, bác gái
+autumn;n. mùa thu (hint :a...)
+baby;n. bé
+bad;adj. xấu, dở
+bag;n. túi, bao
+ball;n. trái banh
+basket;n. rổ
+bath;n. bồn tắm
+bathroom;n. phòng tắm
+bed;n. giường
+bedroom;n. phòng ngủ
+beef;n. thịt bò
+beer;n. bia
+bell;n. cái chuông
+bicycle;n. xe đạp (hint :b...)
+big;adj. to, lớn
+bike;n. xe đạp (hint :b...)
+bird;n. chim
+black;adj. đen
+blue;adj. xanh da trời
+boat;n. con tàu, con thuyền
+body;n. cơ thể, thân thể
+book;n. sách, quyển sách
+bottle;n. chai
+box;n. hộp
+boy;n. cậu con trai
+bread;n. bánh mì
+breakfast;n. bữa ăn sáng, điểm tâm
+brother;n. anh/em trai
+brown;adj. nâu
+cake;n. bánh ngọt
+camera;n. máy ảnh, máy quay phim
+candy;n. kẹo
+car;n. xe ô tô
+carrot;n. cà rốt
+cat;n. mèo, con mèo
+chair;n. ghế tựa
+chicken;n. gà, thịt gà
+child;sing. n. đứa trẻ
+cinema;n. rạp chiếu phim
+class;n. lớp học
+classroom;n. phòng học
+clock;n. đồng hồ treo tường
+coat;n. áo choàng
+coffee;n. cà phê
+computer;n. máy vi tính
+copy;v. sao chép
+cow;n. bò cái
+cup;n. tách
+dad;n. bố, cha
+daughter;n. con gái (hint :d...)
+day;n. ngày, thời gian 24 giờ
+dentist;n. nha sĩ
+desk;n. bàn làm việc
+dinner;n. bữa tối
+doctor;n. bác sỹ
+dog;n. con chó
+door;n. cửa ra vào
+dress;n. đầm, váy dài
+ear;n. tai
+eat;v. ăn
+egg;n. trứng
+engineer;n. kỹ sư
+evening;n. buổi tối
+eye;n. mắt
+face;n. khuôn mặt
+family;n. gia đình
+farmer;n. nông dân
+father;n. bố, ba, cha,...
+finger;n. ngón tay
+fish;n. cá
+flower;n. hoa, bông hoa
+food;n. thức ăn, lương thực
+foot;sing. n. chân, bàn chân
+football;n. môn bóng đá
+friend;n. bạn
+fruit;n. trái cây
+game;n. trò chơi
+girl;n. con gái (hint :g...)
+grandparent;n. ông, bà
+grass;n. cỏ
+green;adj. xanh lá cây
+hand;n. bàn tay
+hat;n. mũ
+head;n. đầu
+homework;n. bài tập về nhà
+horse;v. ngựa
+house;n. ngôi nhà
+jacket;n. áo khoác (ngắn, nhẹ)
+juice;n. nước ép
+kid;n. con dê con, đứa trẻ
+king;n. vua
+kitchen;n. phòng bếp
+lake;n. hồ
+lamp;n. đèn
+leg;n. chân
+lemon;n. chanh vàng
+lunch;n. bữa trưa
+market;n. thị trường, chợ, nơi mua bán sản phẩm...
+meat;n. thịt
+milk;n. sữa
+moon;n. mặt trăng
+morning;n. sáng
+mother;n. mẹ, má
+motorbike;n. xe máy, xe mô- tô
+mouse;n. con chuột (máy tính)
+mouth;n. miệng
+musician;n. nhạc sĩ, nhà soạn nhạc
+name;n. tên
+night;n. đêm
+nose;n. mũi
+nurse;n. y tá
+orange;adj. cam
+pants;n. quần
+parent;n. cha, mẹ
+pen;n. bút mực
+pencil;n. bút chì
+pig;n. lợn
+pilot;n. phi công
+pink;n. màu hồng
+police;n. công an, cảnh sát
+potato;n. khoai tây
+prince;n. hoàng tử
+princess;n. công chúa
+pupil;n. học sinh
+purple;adj. màu tía
+queen;n. nữ hoàng
+red;adj. đỏ
+rice;n. lúa, gạo, cơm
+ring;n. sàn đấu (boxing)
+room;n. phòng
+ruler;n. thước kẻ
+school;n. trường học
+shelf;n. giá sách
+shirt;n. áo sơ mi
+shoe;n. giày
+shoulder;n. vai
+shower;n. vòi sen
+singer;n. ca sĩ
+sister;n. chị gái, em gái
+skirt;n. váy, chân váy
+sky;n. trời
+snake;n. con rắn
+soap;n. xà phòng, xà bông
+son;n. con trai
+song;n. bài hát
+soup;n. xúp
+spider;spider. con nhện
+spring;n. mùa xuân
+stamp;n. tem
+star;n. ngôi sao
+student;n. học sinh, sinh viên
+sugar;n. đường
+summer;n. mùa hè
+sun;n. mặt trời
+supermarket;n. siêu thị
+sweater;n. áo len
+table;n. bàn, cái bàn
+tea;n. trà
+teacher;n. giáo viên
+television;n. truyền hình, TV, máy thu hình
+thank;v. cảm ơn
+tomato;n. cà chua
+tooth;n. răng
+tree;n. cây
+umbrella;n. ô, dù
+uncle;n. chú, cậu, bác trai
+waiter;n. phục vụ nam
+watch;v. xem
+water;n. nước
+white;adj. trắng
+wife;n. vợ
+window;n. cửa sổ
+winter;n. mùa đông
+year;n. năm
+yellow;adj. vàng (hint :y...)
+accountant;n. Kế toán viên
+air;n. không khí
+airport;n. sân bay
+apartment;n. căn hộ
+band;n. ban nhạc
+bank;n. ngân hàng
+basic;adj. nền tảng, cơ sở
+beach;n. bãi biển
+birthday;n. sinh nhật
+bone;n. xương
+bridge;n. cầu
+building;n. tòa nhà, tòa cao ốc
+businessman;n. doanh nhân, thương gia
+busy;adj. bận rộn
+camping;n. sự cắm trại
+chairman;n. người điều khiển một cuộc họp, chủ toạ
+cheap;adj. rẻ, rẻ tiền
+check;v. kiểm tra
+cheque;n. séc
+church;n. nhà thờ
+city;n. thành phố
+cloud;n. mây, đám mây
+club;n. câu lạc bộ
+cold;n. sự cảm lạnh
+colour;n. màu sắc
+cook;n. đầu bếp
+cousin;n. anh, chị, em họ
+diamond;n. kim cương
+dictionary;n. từ điển
+director;n. giám đốc (hint :d...)
+drugstore;n. hiệu thuốc tây
+early;adv. sớm (hint :e...)
+east;n. phía đông
+easy;adj. dễ
+end;n. sự kết thúc
+enter;v. đến, đi vào
+example;n. thí dụ
+exit;n. lối ra
+factory;n. nhà máy, xí nghiệp
+fan;n. người hâm mộ
+far;adv. xa
+fast;adj. nhanh
+fat;adj. béo, mập
+field;n. cánh đồng
+fire;n. lửa
+first;ordinal no. thứ nhất, đầu tiên
+fix;v. lắp, sửa chữa
+flat;adj. phẳng
+floor;n. tầng, lầu
+forest;n. rừng
+forever;adv. mãi mãi, vĩnh viễn
+free;adj. rảnh rỗi
+full;adj. đầy đặn, dày
+garden;n. khu vườn
+gas;n. hơi, khí đốt thiên nhiên
+gold;adj. vàng (hint :g...)
+good;adj. tốt
+group;n. nhóm
+hairdresser;n. thợ cắt tóc
+happy;adj. hạnh phúc, vui vẻ
+headache;n. đau đầu
+heart;n. tim
+high;adj. cao (hint :h...)
+hospital;n. bệnh viện
+hot;adj. nóng
+hotel;n. khách sạn
+hour;n. giờ, tiếng đồng hồ
+hundred;number. một trăm (100)
+hungry;adj. đói bụng
+husband;n. chồng
+ice;n. nước đá
+ink;n. mực
+job;n. công việc, nghề nghiệp
+journalist;n. nhà báo
+key;adj. chìa khóa
+knife;n. dao
+land;n. đất
+late;adj. muộn, trễ
+lawyer;n. luật sư
+lazy;adj. lười biếng
+lesson;n. bài học, bài giảng
+letter;n. lá thư
+library;library. thư viện
+long;adj. dài
+magazine;n. tạp chí
+mail;v. gửi thư
+man;n. đàn ông
+map;n. bản đồ
+medal;n. huy chương
+member;n. thành viên
+minute;n. phút
+mirror;n. gương
+money;n. tiền
+month;n. tháng
+mountain;n. núi
+movie;n. phim, điện ảnh
+museum;n. viện bảo tàng
+music;n. âm nhạc
+nation;n. quốc gia, đất nước
+neighbour;n. hàng xóm
+never;adv. chưa bao giờ
+new;adj. mới
+newspaper;n. nhật báo
+nice;adj. vui, vui vẻ
+north;n. bắc
+number;n. số
+ocean;n. đại dương, biển
+office;n. văn phòng
+oil;n. dầu, dầu mỏ
+old;adj. già
+outside;adv. bên ngoài
+page;n. trang
+paper;n. giấy
+park;n. công viên
+party;n. đảng, phái, nhóm
+people;n. người, nhiều người, nhân dân
+person;n. người (một người)
+photo;n. ảnh chụp, bức ảnh (viết tắt của photograph)
+photographer;n. nhà nhiếp ảnh
+picture;n. bức tranh
+plane;n. máy bay
+plant;n. thực vật, cây
+plate;n. cái đĩa
+poor;adj. nghèo, bần cùng
+pretty;adv. khá
+print;v. in ấn
+question;n. câu hỏi
+quick;adj. nhanh chóng
+quit;v. nghỉ, bỏ (học, làm việc...)
+railway;n. đường sắt, đường xe lửa
+rain;n. mưa
+restaurant;n. nhà hàng, tiệm ăn
+rich;adj. giàu
+river;n. sông
+road;n. con đường
+sad;adj. buồn
+safe;adj. an toàn
+scientist;n. nhà khoa học
+sea;n. biển
+season;n. mùa
+secretary;n. thư kí
+ship;v. vận chuyển
+shopping;n. mua sắm
+short;adj. thấp, ngắn
+sick;adj. ốm yếu, ốm đau
+silver;adj. bạc
+skin;n. da, làn da
+slow;adj. chậm
+small;adj. nhỏ, bé
+soft;adj. mềm
+software;n. phần mềm, chương trình máy tính
+south;adv. phía nam
+sport;n. môn thể thao
+store;n. cửa hàng
+story;n. câu chuyện
+street;n. đường phố
+strong;adj. khỏe, mạnh, tốt, bền, kiên cố, đanh thép, kiên quyết, sôi nổi, nhiệt tình...
+subject;n. môn học
+suit;v. phù hợp với, thích hợp với
+suitcase;n. va li
+surname;n. họ
+sweet;n. ngọt
+tall;adj. cao (hint :t...)
+team;n. đội
+test;v. kiểm tra, thử nghiệm
+text;n. văn bản, nội dung
+theatre;n. nhà hát
+thick;adj. dày
+thin;adj. gầy, mỏng
+thirsty;adj. khát
+ticket;n. vé
+time;n. thời gian
+timetable;n. thời khóa biểu
+tired;adj. mệt
+today;n. hôm nay
+town;n. phố, thị trấn
+train;n. tàu hỏa
+truck;n. xe tải
+underwear;n. quần áo lót
+university;n. đại học (hint :u...)
+vegetable;n. rau quả
+village;n. làng
+visitor;n. khách đến thăm
+volume;n. âm lượng, lượng, khối lượng
+walk;v. đi bộ
+wallet;n. ví (thường dùng cho nam giới)
+war;n. chiến tranh
+warm;adj. ấm, ấm áp
+wedding;n. lễ cưới
+week;n. tuần lễ
+weekend;n. ngày cuối tuần
+west;n. phía Tây
+wind;n. gió
+wine;n. rượu
+winner;n. người thắng cuộc
+woman;n. phụ nữ
+word;n. chữ, lời nói, lời (nhận xét, tuyên bố..)
+writer;n. nhà văn
+yesterday;adv. ngày hôm qua
+young;adj. trẻ
+adult;n. người lớn, người đã trưởng thành
+age;n. tuổi
+ago;adv. trước đây, trước (thì quá khứ đơn)
+agree;v. đồng ý, bằng lòng
+angry;adj. giận dữ
+animal;n. động vật, con vật
+answer;v. trả lời
+area;n. khu vực
+art;n. mỹ thuật
+ask;v. hỏi
+author;n. tác giả
+awful;adj. tồi tệ, kinh khủng
+balloon;n. khinh khí cầu, bóng bay
+battery;n. ắc quy, pin
+beard;n. râu quai nón
+become;v. trở nên, trở thành
+bill;n. hóa đơn
+biology;n. môn sinh học
+blood;n. máu
+blow;v. thổi
+boss;n. chủ
+bring;v. mang
+brush;v. đánh, chải (răng)
+build;v. xây dựng
+bulb;n. bóng đèn
+button;n. nút (áo quần)
+buy;v. mua
+cancel;v. hủy bỏ
+capital;n. thủ đô
+carry;v. mang, vác, chở, ẳm
+cash;n. tiền mặt
+centre;n. trung tâm
+change;v. thay đổi
+cigarette;n. thuốc lá
+clean;v. lau chùi
+clear;v. dọn, dọn dẹp
+client;n. khách, khách hàng
+climb;v. leo trèo
+close;v. đóng lại
+clothes;n. trang phục
+coast;n. bờ biển
+collect;v. thu nhặt, sưu tập
+college;n. đại học (hint :c...)
+comb;v. chải tóc
+come;v. đến, tới
+comment;n. lời phê bình, lời nhận xét
+company;n. công ty
+connect;v. Kết nối
+contain;v. chứa, bao gồm
+contest;n. cuộc thi
+control;v. điều khiển, chỉ đạo
+cough;v. ho
+country;n. đất nước, quốc gia, miền quê, nông thôn
+countryside;n. nông thôn
+court;n. tòa án
+cry;v. kêu, la, hét
+cut;v. đốn, cắt, chặt
+dance;v. nhảy, khiêu vũ
+dark;adj. tối
+deep;adj. sâu
+design;n. kiểu dáng, thiết kế
+diary;n. nhật ký
+die;v. chết, qua đời
+dirty;adj. bẩn, bẩn thỉu, dơ bẩn
+discount;v. giảm, bớt, giảm giá, chiết khấu, khấu trừ
+dish;n. món ăn
+document;n. văn bản
+drama;n. kịch, phim nhiều tập
+draw;v. vẽ
+dream;n. mơ
+drink;n. thức uống
+drive;v. lái xe (ô tô)
+dry;adj. khô
+earth;n. thế giới, trái đất
+elevator;n. thang máy
+essay;n. bài tiểu luận
+event;n. sự kiện
+examination;n. kỳ thi
+expensive;adj. đắt
+false;adj. giả, sai
+fashion;adj. thời trang, mốt
+feel;v. cảm thấy
+file;v. sắp xếp, sắp đặt
+find;v. tìm kiếm
+fit;v. hợp, vừa
+flag;n. cờ
+flash;n. đèn nháy
+flood;n. trận lụt
+flu;n. cúm, bệnh cúm
+fly;n. con ruồi
+follow;v. đi theo, theo sau
+foolish;adj. dại dột, ngu xuẩn
+fresh;adj. mùi tươi mới
+fry;v. rán, chiên 
+garbage;n. rác
+gate;n. cổng
+gentleman;n. người đàn ông phong nhã, quý phái
+geography;n. môn điạ lý
+gift;n. quà
+glad;adj. vui
+glass;n. thủy tinh
+go;v. đi
+great;adj. tuyệt vời
+guess;v. phỏng đoán
+guest;n. khách khứa, khách mời
+hate;v. ghét, không thích
+hear;v. nghe (hint :h...)
+heavy;adj. nặng
+hero;n. anh hùng
+history;n. môn Lịch sử, lịch sử
+holiday;n. ngày lễ
+hug;v. ôm chặt
+idea;n. ý tưởng
+ill;adj. Đau yếu, ốm
+insert;v. chèn vào, cho vào
+inside;adv. bên trong
+install;v. lắp đặt, cài đặt
+invent;v. phát minh, sáng chế
+iron;v. là (quần áo)
+join;v. tham gia
+jump;v. nhảy, cú nhảy
+kick;v. đá
+kill;v. giết chết
+kiss;v. hôn
+know;v. biết
+lady;n. cô gái, quý bà (đặc biệt người lớn tuổi, cách nói lịch sự)
+large;adj. rộng (hint :l...)
+laugh;n. tiếng cười (cười lớn)
+law;n. luật
+learn;v. học, nghiên cứu
+left;n. bên trái
+life;n. cuộc sống
+light;adj. sáng sủa (hint :l...)
+list;n. danh sách
+listen;v. nghe (hint :l...)
+literature;n. văn học
+live;v. sống, sinh sống
+look;v. nhìn (hint :l...)
+love;v. yêu
+low;adj. thấp
+lucky;adj. may mắn
+machine;n. máy, máy móc
+make;v. tạo ra, làm ra
+make-up;n. đồ trang điểm
+manager;n. giám đốc (hint :m...)
+match;v. ghép, nối
+mathematics;n. toán học
+medicine;n. thuốc
+meet;v. gặp, gặp mặt
+mix;n,v. (n.) hỗn hợp, (v.) hợp vào, trộn lẫn
+model;n. mô hình, mẫu
+move;n. sự di chuyển
+news;n. tin tức
+noisy;adj. ồn ào
+novel;n. truyện, tiểu thuyết
+open;v. mở
+packet;n. gói nhỏ, hộp nhỏ
+paint;v. sơn
+part;n. phần, bộ phận
+passport;n. hộ chiếu
+pause;n. sự tạm nghỉ, ngưng
+pay;v. trả, đưa
+peaceful;adj. yên bình, thanh bình
+period;n. tiết học
+petrol;n. xăng dầu
+phone;v. điện thoại
+place;n. nơi chốn
+plan;n. kế hoạch, dự án
+play;v. chơi
+pocket;n. túi, bọc
+present;v. đưa ra, bày tỏ, giới thiệu
+price;n. giá tiền
+pull;v. kéo
+push;v. đẩy
+put;v. đặt, để, cho vào
+quiet;adj. yên lặng, yên tĩnh, êm ả
+quite;adv. tương đối, khá
+read;v. đọc
+ready;adj. sẵn sàng
+really;adv. thực sự
+receive;v. nhận
+record;n. hồ sơ, sổ sách, biên bản
+refrigerator;n. tủ lạnh
+register;v. đăng ký
+relationship;n. mối quan hệ, mối liên hệ
+relax;v. thư giãn
+remember;v. nhớ, ghi nhớ
+remove;v. loại bỏ
+rent;v. thuê
+repeat;v. nhắc lại
+replace;v. thay thế
+reply;v. trả lời, đáp lại 
+report;v. báo cáo, tường thuật
+retired;adj. nghỉ hưu
+ride;v. đi (xe), cưỡi (ngựa,…)
+right;n. bên phải
+round;adj. tròn
+run;v. chạy, vận hành
+sale;n. đợt bán hàng, giảm giá
+salt;n. muối
+sample;n. mẫu, mẫu vật
+sand;n. cát
+say;v. nói ( cái gì)
+science;n. khoa học, môn Khoa học
+scissors;n. cái kéo
+scream;v. kêu thét, la hét
+screen;v. sàng, lọc (hồ sơ xin việc)
+search;n. cuộc tìm kiếm, thăm dò
+second;ordinal no. thứ hai, thứ nhì
+secret;n. bí mật
+see;v. nhìn (hint :s...)
+select;v. chọn lựa, chọn lọc
+sell;v. bán
+send;v. gửi đi
+sentence;n. câu
+sharp;adj.  thông minh, láu lỉnh
+shine;v. Chĩa ánh sáng (đèn pin..) về một hướng nào đó
+shout;v. la hét, reo hò
+similar;adj. tương tự
+simple;adj. đơn giản
+sing;v. hát
+sink;n. bồn rửa
+sit;v. ngồi
+size;n. cỡ
+skill;n. kỹ năng, kỹ xảo
+sleep;n. sự, giấc ngủ
+smell;v. ngửi, có mùi, mùi hương
+smile;v. cười, mỉm cười
+smoke;v. hút (thuốc)
+sneeze;v. hắt hơi
+soldier;n. người lính
+soon;adv. sớm (hint :s...)
+speak;v. nói
+spoon;n. cái thìa
+stand;v. đứng, chân chống
+start;v. bắt đầu (hint :s...)
+stone;n. đá cục
+stop;v. dừng lại
+storm;n. cơn bão, giông tố
+strange;adj. lạ lẫm
+study;v. học
+style;n. phong cách
+swim;v. bơi
+symbol;n. biểu tượng
+system;n. hệ thống, chế độ
+tablet;n. viên thuốc
+take;v. đưa, đưa đi, mang theo
+talk;v. nói chuyện, chuyện trò
+taste;n. vị giác, nếm, sở thích, thị hiếu
+teach;v. dạy, dạy học
+tell;v. bảo, nói cho biết
+thief;n. tên trộm
+think;v. suy nghĩ, nghĩ
+thousand;no. nghìn, ngàn
+throw;v. ném, quăng
+together;adv. cùng nhau
+tomorrow;n. ngày mai
+tool;n. dụng cụ
+topic;n. chủ đề
+total;adj. n. tổng cộng
+touch;v. đụng, chạm
+translate;v. chuyển sang, biến thành
+travel;v. đi lại, đi du lịch
+trouble;n. điều lo lắng, điều rắc rối, điều phiền muộn
+trust;n. sự tin tưởng, tín nhiệm
+truth;n. sự thật, chân lý
+turn;v. rẽ, quẹo
+ugly;adj. xấu
+understand;v. hiểu, thông cảm
+upstairs;adv. ở trên gác, ở tầng trên, lên cầu thang
+use;v. sử dụng, dùng
+vacation;n. kỳ nghỉ
+vocabulary;n. từ vựng
+voice;n. giọng nói
+volunteer;n. người tình nguyện, tình nguyện viên
+vote;n. lá phiếu, sự bỏ phiếu
+wait;v. đợi, đợi chờ
+wake;v. tỉnh dậy, thức dậy
+wall;n. tường
+want;v. muốn, muốn có
+wash;v. rửa, giặt
+waste;v. lãng phí
+wave;v. vẫy tay
+weak;adj. yếu, yếu ớt
+wear;v. mang, đeo, mặc
+weight;n. khối lượng, cân nặng
+wet;adj. ướt
+wide;adj. rộng (hint :w...)
+win;v. chiến thắng, đạt được
+wish;n. mong muốn
+wood;n. gỗ
+wool;n. len
+work;v. làm việc
+world;n. thế giới
+write;v. viết
+wrong;adv. sai
+zone;n. vùng, khu vực (có một đặc trưng nào đó)
+able;adj. có thể (hint :a...)
+absent;adj. vắng mặt, đi vắng
+accept;v. nhận, chấp nhận
+accident;n. tai nạn
+activity;n. hoạt động
+add;v. thêm vào
+advise;v. khuyên
+afraid;adj. sợ
+ahead;adv. phía trước
+already;adv. rồi
+always;adv. luôn luôn
+ambulance;n. xe cứu thương
+arrive;v. đến
+asleep;adj. ngủ, đang ngủ
+attend;v. tham dự, có mặt
+audience;n. khán giả
+automatic;adj. tự động
+avoid;v. tránh, tránh khỏi, hủy bỏ, bác bỏ
+award;v. thưởng, tặng
+beautiful;adj. xinh đẹp
+begin;v. bắt đầu (hint :b...)
+believe;v. tin
+bite;n. vết cắn, miếng
+blind;adj. mù, không nhìn thấy được
+boil;v. đun sôi, luộc
+borrow;v. mượn, vay
+brain;n. não bộ
+bright;adj. sáng sủa (hint :b...)
+broad;adj. to, rộng
+burn;v. đốt, cháy
+calculate;v. tính, tính toán
+cancer;n. ung thư
+care;n. sự chăm sóc, sự cẩn thận
+careful;adj. cẩn thận
+catch;v. bắt lấy, nắm lấy
+ceiling;n. trần
+celebrate;v. kỉ niệm
+century;n. thế kỷ
+chance;n. cơ hội
+chew;v. nhai
+chief;n. người có cấp bậc cao nhất trong một tổ chức, một cơ quan
+choice;n. sự lựa chọn
+choose;v. chọn, chọn lựa
+circle;n. vòng tròn
+clever;adj. thông minh, nhanh trí
+climate;n. khí hậu
+cloth;n. vải
+combine;v. kết hợp, phối hợp
+command;n. ra lệnh
+communicate;v. giao tiếp
+community;n. cộng đồng
+compare;v. so sánh
+complain;v. than phiền, khiếu nại
+complete;v. hoàn thành
+complex;adj. phức tạp, khó hiểu
+condition;n. điều kiện, tình trạng
+conference;n. hội nghị
+consist;v. bao hàm, bao gồm
+consumer;n. người tiêu dùng
+contact;v. tiếp xúc, liên hệ
+continue;v. tiếp tục, duy trì
+corner;n. góc
+cost;v,n. có giá là, chi phí
+count;v. đếm, tính
+couple;n. cặp, đôi (hint :c...)
+course;n. khóa học
+crazy;adj. điên, ngốc
+create;v. tạo ra
+culture;n. văn hóa (của một nhóm hoặc tổ chức)
+cure;n. thuốc, phương thuốc, cách chữa bệnh
+customer;n. khách hàng (người mua hàng hóa hoặc dịch vụ)
+daily;adj. hằng ngày
+damage;n. hư hỏng, hỏng hóc, thiệt hại vật chất
+dangerous;adj. nguy hiểm
+dead;adj. chết (người, vật, cây cối)
+deaf;adj. điếc, không nghe thấy được
+dear;adj. thân, thân mến
+death;n. cái chết
+decade;n. thập kỷ, thời kỳ mười năm
+decide;v. quyết định
+decrease;v. làm giảm
+depend;v. dựa vào, phụ thuộc vào
+destroy;v. tàn phá, phá hủy
+diet;n. ăn kiêng, chế độ ăn uống
+different;adj. khác
+difficult;adj. khó
+digital;adj. thuộc về số, kĩ thuật số
+discuss;v. thảo luận, tranh luận (một vấn đề gì)
+disease;n. bệnh, bệnh tật
+dislike;v. không thích
+divorced;adj. li dị
+downstairs;adv. xuống cầu thang
+drop;n. giọt
+drought;n. nạn hạn hán
+economy;n. nền kinh tế
+educate;v. giáo dục, dạy
+effect;n. hiệu quả, hiệu ứng
+electricity;n. điện
+employ;v. thuê ai làm việc
+employee;n. nhân viên, người lao động
+employer;n. chủ, người sử dụng lao động
+energy;n. năng lượng, sức lực
+engaged;adj. đã đính ước, đính hôn
+enjoy;v. yêu thích, thưởng thức
+entertainment;n. ‹sự› giải trí, tiêu khiển
+envelope;n. phong bì
+environment;n. môi trường
+error;n. lỗi, sai lầm
+especially;adv. đặc biệt
+excellent;adj. xuất sắc, ưu tú
+explain;v. giải thích
+explore;v. khảo sát, thăm dò, khám phá
+fail;v. thất bại
+fall;n. mùa thu (hint :f...)
+famous;adj. nổi tiếng
+fee;n. lệ phí, thù lao
+festival;n. đại hội, lễ hội, liên hoan
+fever;n. sốt
+final;n. trận, vòng chung kết
+finally;adv. cuối cùng
+flight;n. chuyến bay
+flow;v. chảy
+force;v. bắt buộc
+forecast;v. dự báo, dự đoán, đoán trước
+forget;v. quên
+friendly;adj. thân thiện, thân mật
+friendship;n. tình bạn
+funeral;n. lễ tang
+funny;adj. hài hước, khôi hài
+future;n. tương lai
+general;n. vị tướng, nhà chiến lược xuất sắc
+get;v. có được, nhận được
+give;v. đưa, trao, cho
+global;adj. toàn cầu
+glue;n. keo hồ
+goal;n. mục đích, mục tiêu
+goods;n. hàng hóa
+government;n. chính phủ
+grow;v. trồng, mọc
+habit;n. thói quen
+habitat;n. môi trường sống
+happen;v. xảy ra
+hard;adv. vất vả,chăm chỉ
+harm;n. sự tổn hại
+healthy;adj. khỏe mạnh, có lợi cho sức khỏe
+heat;v. đun nóng
+help;v. giúp, giúp đỡ
+hide;v. giấu
+hire;v. thuê, mướn, tiền trả công
+hobby;n. sở thích
+hope;n. hy vọng
+huge;adj. to lớn, rộng lớn
+human;n. con người, loài người
+hurry;n. Nhanh lên!
+imagine;v. tưởng tượng, hình dung
+important;adj. quan trọng, trọng đại
+industry;n. công nghiệp, ngành công nghiệp
+information;n. thông tin
+insect;n. côn trùng
+intelligent;adj. thông minh (hint :i...)
+interesting;adj. thú vị
+international;adj. (thuộc về) quốc tế
+interview;n. cuộc phỏng vấn
+introduce;v. giới thiệu
+invite;v. mời
+island;n. đảo
+jewellery;n. trang sức
+journey;n. chuyến đi
+joy;n. niềm vui, sự vui mừng
+keep;v. giữ, duy trì
+kind;adj. tử tế, ân cần
+knowledge;n. kiến thức, sự hiểu biết
+landscape;n. phong cảnh
+language;n. ngôn ngữ
+last;v. kéo dài
+leader;n. (người) lãnh đạo
+leave;v. khởi hành, rời khỏi
+lend;v. cho mượn
+level;n. cấp, cấp bậc, trình độ
+lift;v. nâng lên, nhấc lên
+like;v. thích
+local;adj. mang tính địa phương
+lock;v. khóa
+lonely;adj. cô đơn
+lose;v. làm mất, thất lạc, không thể tìm thấy
+loud;adj. to
+lovely;adj. xinh đẹp, đáng yêu
+luggage;n. hành lý, đồ đạc
+main;adj. chính yếu, chủ đạo
+married;adj. lập gia đình
+maybe;adv. có lẽ
+meal;n. bữa ăn
+mean;v. nghĩa là, có nghĩa là
+means;n. phương tiện
+media;n. truyền thông
+memory;n. trí nhớ
+message;n. thông báo, lời nhắn
+middle;adj. giữa
+million;n. triệu
+miss;v. thấy nhớ (ai đó)
+modern;adj. hiện đại
+moment;n. khoảnh khắc, chốc lát
+nature;n. thiên nhiên
+need;v. cần
+network;v. nối mạng
+opposite;prep. đối diện
+order;n. đơn đặt hàng
+owner;n. người sở hữu
+pair;n. cặp, đôi (hint :p...)
+palace;n. cung điện
+pass;v. đi qua
+passenger;n. hành khách
+patient;n. bệnh nhân
+per cent;adj. phần trăm
+perfect;adj. hoàn hảo, đầy đủ
+pick;v. hái, nhặt
+planet;n. hành tinh
+popular;adj. nổi tiếng, phổ biến
+position;n. vị trí
+possible;adj. có thể (hint :p...)
+pour;v. đổ, rót
+power;n. điện, năng lượng
+practice;v. thực hành, rèn luyện 
+pray;v. cầu nguyện
+prefer;v. thích hơn
+prepare;v. chuẩn bị
+president;n. hiệu trưởng, chủ tịch
+press;v. ấn, nhấn
+prize;n. giải thưởng
+problem;n. vấn đề
+produce;v. sản xuất, sản sinh, tạo ra
+product;n. sản phẩm
+project;v. kế hoạch, đồ án, dự án
+protect;v. bảo vệ, bảo hộ, che chở
+provide;v. cung cấp
+public;adj. công cộng, công
+punch;n. cú đấm
+realize;v. nhận ra, nhận thức
+reason;n. lý do
+receipt;n. giấy biên nhận
+reduce;v. giảm, hạ
+refuse;v. từ chối
+region;n. vùng/miền
+regret;n. sự hối tiếc
+reward;n. tiền thưởng, vật thưởng (làm việc chăm chỉ...)
+rise;v. mọc (mặt trời), nhô lên
+rob;v. cướp
+rule;n. quy tắc, phép tắc
+salary;n. lương hàng tháng
+seat;n. chỗ ngồi
+sense;n. giác quan, tri giác, cảm giác
+series;n. phim dài kỳ trên truyền hình
+serious;adj. nghiêm túc
+serve;v. múc, xới, gắp ra để ăn
+service;n. dịch vụ
+side;n. phía, bên
+sign;n. bảng hiệu, dấu hiệu
+silent;adj. yên lặng
+silly;adj. ngớ ngẩn, ngốc nghếch
+skyscraper;n. nhà chọc trời
+smart;adj. thông minh (hint :s...)
+society;n. xã hội
+solve;v. giải quyết, tìm giải pháp
+sometimes;adv. thỉnh thoảng, đôi khi
+sound;v. nghe có vẻ, nghe như
+sour;adj. chua
+special;adj. đặc biệt
+speech;n. bài diễn văn, diễn thuyết
+spend;v. sử dụng, trải qua
+spicy;adj. cay nồng
+statue;n. tượng
+steal;v. ăn cắp, lấy trộm
+step;n. bước đi, tiếng bước chân
+straight;adj. tóc thẳng
+supply;n. ‹sự/đồ/nguồn/_› dự trữ, tiếp tế cấp
+sure;adj. chắc chắn
+swallow;v. nuốt, tiêu hóa
+task;n. nhiệm vụ
+tear;n. nước mắt, lệ
+technology;n. công nghệ
+terrible;adj. kinh khủng
+therefore;adv. vì vậy
+tidy;v. dọn dẹp
+tie;v. trói, buộc
+tourist;n. khách du lịch
+traffic;n. sự đi lại, giao thông
+true;adj. đúng, thật
+type;v. đánh máy
+useful;adj. hữu ích
+usually;adv. thường thường, thường xuyên
+version;n. phiên bản
+victim;n. nạn nhân
+victory;n. chiến thắng
+way;n. cách thức, phương pháp
+weather;n. thời tiết
+without;prep. không có
