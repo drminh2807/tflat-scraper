@@ -1,6 +1,6 @@
-const path = 'https://tienganhtflat.com/blog/tu-vung-ielts-phan-'
+const path = 'https://tienganhtflat.com/blog/tu-vung-sat-phan-'
 const total = 18
-const name = 'ielts'
+const name = 'sat'
 
 const start = async (page) => {
     const response = await fetch(`${path}${page}`)
