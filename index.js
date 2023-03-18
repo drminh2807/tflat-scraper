@@ -4,7 +4,7 @@ const start = async (page) => {
     const trimmedHtml = html.replaceAll('\n', '')
     const regex = /<b style="color: #337ab7;">(.+?)<\/b>\((.+?)\): <i>(.+?)<\/i>/gm;
     let m
-    const result = new Set()
+    const result = []
     while ((m = regex.exec(trimmedHtml)) !== null) {
         // This is necessary to avoid infinite loops with zero-width matches
         if (m.index === regex.lastIndex) {
@@ -22,22 +22,22 @@ const start = async (page) => {
                 meaning = meaning + ' ' + match
             }
         });
-        result.add(word + ';' + meaning.replaceAll(';', ','))
+        result.push(word + ';' + meaning.replaceAll(';', ','))
     }
-    const lines = [...result]
-    const newLines = lines.map((item, index) => {
-        if (lines.slice(index + 1).find(i => i[0] === item[0] || i[1] === item[1])) {
-            return `${item[0]};${item[1]} (hint :${item[0].charAt(0)}...)`
-        }
-        return item.join(';')
-    })
-    return newLines.join('\n')
+    return result.join('\n')
 }
 
 const main = async () => {
     const results = await Promise.all(Array.from({ length: 71 }).map((_, index) => start(index + 1)))
+    const lines = [...(new Set(results.join('\n').split('\n')))].map(i => i.split(';'))
+    const newLines = lines.map((item, index) => {
+        if (lines.find((i, k) => i[1] === item[1] && k !== index)) {
+            return `${item[0]};${item[1]} (hint :${item[0].charAt(0)}...)`
+        }
+        return item.join(';')
+    })
     const fs = require('fs');
-    fs.writeFileSync('./oxford.csv', results.join('\n'))
+    fs.writeFileSync('./oxford.csv', newLines.join('\n'))
 }
 
 main()
