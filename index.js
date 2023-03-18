@@ -1,5 +1,9 @@
+const path = 'https://tienganhtflat.com/blog/tu-vung-ielts-phan-'
+const total = 18
+const name = 'ielts'
+
 const start = async (page) => {
-    const response = await fetch(`https://tienganhtflat.com/blog/tu-vung-oxford-phan-${page}`)
+    const response = await fetch(`${path}${page}`)
     const html = await response.text()
     const trimmedHtml = html.replaceAll('\n', '')
     const regex = /<b style="color: #337ab7;">(.+?)<\/b>\((.+?)\): <i>(.+?)<\/i>/gm;
@@ -28,7 +32,7 @@ const start = async (page) => {
 }
 
 const main = async () => {
-    const results = await Promise.all(Array.from({ length: 71 }).map((_, index) => start(index + 1)))
+    const results = await Promise.all(Array.from({ length: total }).map((_, index) => start(index + 1)))
     const lines = [...(new Set(results.join('\n').split('\n')))].map(i => i.split(';'))
     const newLines = lines.map((item, index) => {
         if (lines.find((i, k) => i[1] === item[1] && k !== index)) {
@@ -37,7 +41,7 @@ const main = async () => {
         return item.join(';')
     })
     const fs = require('fs');
-    fs.writeFileSync('./oxford.csv', newLines.join('\n'))
+    fs.writeFileSync(`./${name}.csv`, newLines.join('\n'))
 }
 
 main()
