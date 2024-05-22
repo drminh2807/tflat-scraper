@@ -1,9 +1,6 @@
-const path = 'https://tienganhtflat.com/blog/tu-vung-cao-cap-phan-'
-const total = 12
-const name = 'cao-cap'
-
-const start = async (page) => {
-    const response = await fetch(`${path}${page}`)
+const name = "adventure-phrases";
+const start = async (url) => {
+    const response = await fetch(url)
     const html = await response.text()
     const trimmedHtml = html.replaceAll('\n', '')
     const regex = /<b style="color: #337ab7;">(.+?)<\/b>\((.+?)\): <i>(.+?)<\/i>/gm;
@@ -32,7 +29,9 @@ const start = async (page) => {
 }
 
 const main = async () => {
-    const results = await Promise.all(Array.from({ length: total }).map((_, index) => start(index + 1)))
+    const fs = require('fs')
+    const urls = fs.readFileSync('./urls.csv','utf-8').split('\n')
+    const results = await Promise.all(urls.map((url) => start(url)))
     const lines = [...(new Set(results.join('\n').split('\n')))].map(i => i.split(';'))
     const newLines = lines.map((item, index) => {
         if (lines.find((i, k) => i[1] === item[1] && k !== index)) {
@@ -40,7 +39,6 @@ const main = async () => {
         }
         return item.join(';')
     })
-    const fs = require('fs');
     fs.writeFileSync(`./${name}.csv`, newLines.join('\n'))
 }
 
