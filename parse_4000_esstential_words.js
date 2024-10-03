@@ -1,49 +1,67 @@
-const fs = require("fs");
-
-// Read the CSV file
-fs.readFile("./input/4000 Essential English Words.csv", "utf8", (err, data) => {
-  if (err) {
-    console.error("Error reading file:", err);
-    return;
-  }
-
-  // Split the data by newlines
-  const lines = data.split("\n");
-
-  // First pass: extract words and meanings, removing duplicates
-  const wordSet = new Set();
-  lines.forEach((row, index) => {
-    const columns = row.split("\t");
-    const word = columns[index > 270 ? 0 : 2];
-    if (word && /^[a-zA-Z]+$/.test(word)) {
-      wordSet.add(word.toLowerCase());
-    }
-  });
-  const rows = [...wordSet];
-  rows.sort();
-  // Log rows containing non-word characters
-  const nonWordRegex = /[^a-zA-Z\s-]/;
-  rows.forEach((row, index) => {
-    if (nonWordRegex.test(row)) {
-      console.log(`Row ${index + 1} contains non-word characters: ${row}`);
-    }
-  });
-  // Join the processed rows
-  const processedData = rows.join("\n");
-
-  // Write the processed data to a new file in the 'set' folder
-  fs.writeFile(
+const fs = require("fs/promises");
+const cheerio = require("cheerio");
+const main = async () => {
+  const file = await fs.readFile(
     "./input/4000_essential_words_list.csv",
-    processedData,
-    "utf8",
-    (err) => {
-      if (err) {
-        console.error("Error writing file:", err);
-        return;
-      }
-      console.log("File has been saved successfully in the set folder.");
-    }
+    "utf8"
   );
-});
+  const folderPath = "/Users/minhdv/Desktop/Cambridge";
+  const dir = await fs.readdir(folderPath);
+  const lines = file.split("\n");
+  const processWords = async (word) => {
+    const htmlPath = dir.find(
+      (path) => path.split(".")[0].split(" ")[1] === word
+    );
+    if (!htmlPath) {
+      console.log(`Not found ${word}`);
+      return null;
+    }
+    const html = await fs.readFile(`${folderPath}/${htmlPath}`, "utf8");
+    const $ = cheerio.load(html);
+    const type = $("span.pos").first().text().trim().replace(/;/g, ",");
+    const en = $("div.def").first().text().trim().replace(/;/g, ",");
+    const vi = $("span.trans").first().text().trim().replace(/;/g, ",");
+    if (vi) {
+      const mean = [type, en, vi].filter(Boolean).join(". ");
+      return `${word};${mean}`;
+    } else {
+      console.log(
+        `Incomplete data for ${word}: type=${type}, en=${en}, vi=${vi}`
+      );
+      return null;
+    }
+  };
 
-// ... existing code ...
+  let results = await Promise.all(lines.map(processWords));
+  results = results.filter(Boolean);
+
+  // Second pass: check for duplicates and add hints
+  const processedRows = results.map((item) => {
+    const [word, meaning] = item.split(";");
+
+    // Check if meaning is duplicated
+    const isDuplicated = results.some(
+      (r) => {
+        const [rWord, rMeaning] = r.split(";");
+        return rWord !== word && rMeaning === meaning;
+      }
+    );
+    let newMeaning = meaning;
+    if (isDuplicated) {
+      const hint = `(${word.charAt(0)}_${word.charAt(
+        Math.floor(word.length / 2)
+      )}_${word.charAt(word.length - 1)})`;
+      newMeaning = `${meaning} ${hint}`;
+    }
+
+    return [word, newMeaning].join(";");
+  });
+
+  await fs.writeFile(
+    "./set/4000_essential_words.csv",
+    processedRows.join("\n"),
+    "utf8"
+  );
+};
+
+main();
