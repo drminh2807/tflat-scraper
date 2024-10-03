@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 // Read the CSV file
-fs.readFile("./input/4000_essential_words.csv", "utf8", (err, data) => {
+fs.readFile("./input/4000 Essential English Words.csv", "utf8", (err, data) => {
   if (err) {
     console.error("Error reading file:", err);
     return;
@@ -11,60 +11,29 @@ fs.readFile("./input/4000_essential_words.csv", "utf8", (err, data) => {
   const lines = data.split("\n");
 
   // First pass: extract words and meanings, removing duplicates
-  const wordMap = new Map();
+  const wordSet = new Set();
   lines.forEach((row, index) => {
     const columns = row.split("\t");
-    const word =
-      columns[
-        index >= 2400
-          ? 1
-          : index >= 1800
-          ? 1
-          : index >= 1200
-          ? 0
-          : index >= 600
-          ? 6
-          : 1
-      ];
-    const meaningIndex =
-      index >= 2400
-        ? 6
-        : index >= 1800
-        ? 5
-        : index >= 1200
-        ? 5
-        : index >= 600
-        ? 4
-        : 3;
-    const meaning = columns[meaningIndex];
-    
-    if (word && meaning && !wordMap.has(word.toLowerCase())) {
-      wordMap.set(word.toLowerCase(), { word, meaning });
+    const word = columns[index > 270 ? 0 : 2];
+    if (word && /^[a-zA-Z]+$/.test(word)) {
+      wordSet.add(word.toLowerCase());
     }
   });
-
-  // Second pass: check for duplicates and add hints
-  const processedRows = Array.from(wordMap.values()).map((item) => {
-    let { word, meaning } = item;
-
-    // Check if meaning is duplicated
-    const isDuplicated = Array.from(wordMap.values()).some(
-      (r) => r.word !== word && r.meaning === meaning
-    );
-    if (isDuplicated) {
-      const hint = `(${word.charAt(0)}_${word.charAt(Math.floor(word.length / 2))}_${word.charAt(word.length - 1)})`;
-      meaning = `${meaning} ${hint}`;
+  const rows = [...wordSet];
+  rows.sort();
+  // Log rows containing non-word characters
+  const nonWordRegex = /[^a-zA-Z\s-]/;
+  rows.forEach((row, index) => {
+    if (nonWordRegex.test(row)) {
+      console.log(`Row ${index + 1} contains non-word characters: ${row}`);
     }
-
-    return [word, meaning].map((i) => i.replaceAll(";", ".")).join(";");
   });
-
   // Join the processed rows
-  const processedData = processedRows.join("\n");
+  const processedData = rows.join("\n");
 
   // Write the processed data to a new file in the 'set' folder
   fs.writeFile(
-    "./set/4000_essential_words.csv",
+    "./input/4000_essential_words_list.csv",
     processedData,
     "utf8",
     (err) => {
