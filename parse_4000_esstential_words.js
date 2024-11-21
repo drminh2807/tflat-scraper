@@ -1,5 +1,13 @@
 const fs = require("fs/promises");
 const cheerio = require("cheerio");
+
+const types = {
+  noun: "n",
+  verb: "v",
+  adjective: "adj",
+  adverb: "adv",
+};
+
 const main = async () => {
   const file = await fs.readFile(
     "./input/4000_essential_words_list.csv",
@@ -18,15 +26,18 @@ const main = async () => {
     }
     const html = await fs.readFile(`${folderPath}/${htmlPath}`, "utf8");
     const $ = cheerio.load(html);
-    const type = $("span.pos").first().text().trim().replace(/;/g, ",");
+    const fullType = $("span.pos").first().text().trim().replace(/;/g, ",");
+    const type = types[fullType] ?? fullType
     const en = $("div.def").first().text().trim().replace(/;/g, ",");
+    const ipa = $("span.pron").first().text().trim().replace(/;/g, ",");
+    const eg = $("span.eg").first().text().trim().replace(/;/g, ",");
     const vi = $("span.trans").first().text().trim().replace(/;/g, ",");
     if (vi) {
-      const mean = [type, en, vi].filter(Boolean).join(". ");
-      return `${word};${mean}`;
+      const mean = [type, vi].filter(Boolean).join(". ");
+      return `${word};${ipa ? `${ipa} ` : ""}${mean}${eg ? `. Eg: ${eg}` : ""}`;
     } else {
       console.log(
-        `Incomplete data for ${word}: type=${type}, en=${en}, vi=${vi}`
+        `Incomplete data for ${word}: type=${type}, eg=${eg}, vi=${vi}`
       );
       return null;
     }
