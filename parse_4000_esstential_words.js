@@ -27,14 +27,19 @@ const main = async () => {
     const html = await fs.readFile(`${folderPath}/${htmlPath}`, "utf8");
     const $ = cheerio.load(html);
     const fullType = $("span.pos").first().text().trim().replace(/;/g, ",");
-    const type = types[fullType] ?? fullType
-    const en = $("div.def").first().text().trim().replace(/;/g, ",");
-    const ipa = $("span.pron").first().text().trim().replace(/;/g, ",");
-    const eg = $("span.eg").first().text().trim().replace(/;/g, ",");
+    const type = types[fullType] ?? fullType;
+    const def = $("div.def").first().text().trim().replace(/;/g, ",");
+    // const ipa = $("span.pron").first().text().trim().replace(/;/g, ",");
+    const eg = $("span.eg")
+      .first()
+      .text()
+      .trim()
+      .replace(/;/g, ",")
+      .replace(new RegExp(word, "g"), "___");
     const vi = $("span.trans").first().text().trim().replace(/;/g, ",");
     if (vi) {
       const mean = [type, vi].filter(Boolean).join(". ");
-      return `${word};${ipa ? `${ipa} ` : ""}${mean}${eg ? `. Eg: ${eg}` : ""}`;
+      return `${word};${mean}${eg ? `. Eg: ${eg}` : ""}`;
     } else {
       console.log(
         `Incomplete data for ${word}: type=${type}, eg=${eg}, vi=${vi}`
@@ -51,12 +56,10 @@ const main = async () => {
     const [word, meaning] = item.split(";");
 
     // Check if meaning is duplicated
-    const isDuplicated = results.some(
-      (r) => {
-        const [rWord, rMeaning] = r.split(";");
-        return rWord !== word && rMeaning === meaning;
-      }
-    );
+    const isDuplicated = results.some((r) => {
+      const [rWord, rMeaning] = r.split(";");
+      return rWord !== word && rMeaning === meaning;
+    });
     let newMeaning = meaning;
     if (isDuplicated) {
       const hint = `(${word.charAt(0)}_${word.charAt(
