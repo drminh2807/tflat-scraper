@@ -1,13 +1,5 @@
 const fs = require("fs/promises");
 const cheerio = require("cheerio");
-
-const types = {
-  noun: "n",
-  verb: "v",
-  adjective: "adj",
-  adverb: "adv",
-};
-
 const main = async () => {
   const file = await fs.readFile(
     "./input/4000_essential_words_list.csv",
@@ -26,23 +18,15 @@ const main = async () => {
     }
     const html = await fs.readFile(`${folderPath}/${htmlPath}`, "utf8");
     const $ = cheerio.load(html);
-    const fullType = $("span.pos").first().text().trim().replace(/;/g, ",");
-    const type = types[fullType] ?? fullType;
-    const def = $("div.def").first().text().trim().replace(/;/g, ",");
-    // const ipa = $("span.pron").first().text().trim().replace(/;/g, ",");
-    const eg = $("span.eg")
-      .first()
-      .text()
-      .trim()
-      .replace(/;/g, ",")
-      .replace(new RegExp(word, "gi"), "___");
+    const type = $("span.pos").first().text().trim().replace(/;/g, ",");
+    const en = $("div.def").first().text().trim().replace(/;/g, ",");
     const vi = $("span.trans").first().text().trim().replace(/;/g, ",");
     if (vi) {
-      const mean = [type, vi].filter(Boolean).join(". ");
-      return `${word};${mean}${eg ? `. Eg: ${eg}` : ""}`;
+      const mean = [type, en, vi].filter(Boolean).join(". ");
+      return `${word};${mean}`;
     } else {
       console.log(
-        `Incomplete data for ${word}: type=${type}, eg=${eg}, vi=${vi}`
+        `Incomplete data for ${word}: type=${type}, en=${en}, vi=${vi}`
       );
       return null;
     }
