@@ -35,7 +35,7 @@ const main = async () => {
       .text()
       .trim()
       .replace(/;/g, ",")
-      .replace(new RegExp(word, "g"), "___");
+      .replace(new RegExp(word, "gi"), "___");
     const vi = $("span.trans").first().text().trim().replace(/;/g, ",");
     if (vi) {
       const mean = [type, vi].filter(Boolean).join(". ");
