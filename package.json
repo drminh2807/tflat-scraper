@@ -9,6 +9,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cheerio": "^1.0.0"
+    "async": "^3.2.6",
+    "cheerio": "^1.0.0",
+    "j-pdfjson": "^1.1.9",
+    "lodash": "^4.17.21",
+    "pdf-parse": "^1.1.1",
+    "pdf2json": "^3.1.4",
+    "pdfreader": "^3.0.5",
+    "xmldom": "^0.6.0"
   }
 }
